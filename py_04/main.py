@@ -24,7 +24,7 @@ def info():
             web = df.iloc[index, 0]
             email = df.iloc[index, 1]
             pwd = df.iloc[index, 2]
-            messagebox.showinfo(web, f"Email: {email}\nPassword: {pwd}")
+            messagebox.showinfo(f"{web}", f"Email: {email}\nPassword: {pwd}")
             return
     messagebox.showerror("Error", f"this website {ent_website.get()} doesn't exist")
 
